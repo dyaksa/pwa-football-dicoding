@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#00bcd4" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Informasi Bola</title>
+	<link href="asset/vendors/css/materialize.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="asset/css/style.css" rel="stylesheet">
+  <link href="manifest.json" rel="manifest">
+</head>
+<body>
+	<header>
+		<nav class="cyan">
+			<div class="container nav-wrapper">
+				<a href="#">Informasi Bola</a>
+				<a href="../index.html" class="sidenav-trigger" data-target="nav-mobile">
+       	 			<i class="material-icons">arrow_back</i>
+      			</a>
+				<ul id ="topnav" class="topnav right hide-on-med-and-down"></ul>
+				<ul class="sidenav" id="nav-mobile"></ul>
+				<ul></ul>
+			</div>
+		</nav>
+	</header>
+	<main class="container body-content">
+		  <div class="card">
+    <div class="card-image">
+    	<img id="crestImg" class="responsive-image" alt="img">
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a class="active" href="#information">Information</a></li>
+        <li class="tab"><a href="#squad">Squad</a></li>
+        <li class="tab"><a href="#match">Match</a></li>
+      </ul>
+    </div>
+    <div class="card-content">
+      <div id="information">
+      	
+      </div>
+      <div id="squad">
+      	<table class="highlight">
+      		<thead>
+      			<tr>
+      				<th>Name</th>
+      				<th>Nationality</th>
+      				<th>Position</th>
+      			</tr>
+      		</thead>
+      		<tbody class="squad">
+      			
+      		</tbody>
+      	</table>
+      </div>
+      <div id="match">
+        <table class="highlight">
+          <thead>
+            <tr>
+              <th>Home Team</th>
+              <th>Away Team</th>
+              <th>Date</th>
+              <th>Stage</th>
+            </tr>
+          </thead>
+          <tbody class="match">
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+	</main>
+	  <div class="fixed-action-btn">
+    	<a class="waves-effect waves-light btn-floating btn-medium black" id="save">
+      		<i class="large material-icons">save</i>
+    	</a>
+  	</div>
+    <script src="asset/vendors/js/materialize.min.js"></script>
+    <script src="team.js" type="module"></script>
+</body>
+</html>
